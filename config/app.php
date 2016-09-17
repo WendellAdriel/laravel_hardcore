@@ -166,17 +166,17 @@ return [
         /*
          * Package Service Providers...
          */
-
-        //
+        Migrator\MigrationServiceProvider::class,
 
         /*
-         * Application Service Providers...
+         * Domains Service Providers
          */
-        Confee\Providers\AppServiceProvider::class,
-        // Confee\Providers\BroadcastServiceProvider::class,
-        Confee\Providers\AuthServiceProvider::class,
-        Confee\Providers\EventServiceProvider::class,
-        Confee\Providers\RouteServiceProvider::class,
+        Confee\Domains\Users\Providers\DomainServiceProvider::class,
+
+        /*
+         * Units Service Providers...
+         */
+        Confee\Units\Authentication\Providers\UnitServiceProvider::class,
 
     ],
 
